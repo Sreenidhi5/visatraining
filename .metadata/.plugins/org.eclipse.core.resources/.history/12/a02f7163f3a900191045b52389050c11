@@ -1,0 +1,48 @@
+package com.visa.training.sl;
+
+import java.util.List;
+
+import com.visa.training.dal.ProductDAO;
+import com.visa.training.domain.Product;
+
+public class ProductServiceImpl implements ProductService {
+	
+	ProductDAO dao ;
+	
+
+	@Override
+	public int addNewProduct(Product p) {
+		// TODO Auto-generated method stub
+		int id =0;
+		if(p.getPrice()* p.getQoh()>1000) {
+			Product created = dao.save(p);
+			id=created.getId();
+			
+			
+		}else {
+			throw new IllegalArgumentException("min value of stock should be 1000");
+		}
+		return id;
+	}
+
+	@Override
+	public List<Product> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Product findById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteProduct(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+}

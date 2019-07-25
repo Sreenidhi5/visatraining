@@ -1,0 +1,17 @@
+package com.visa.training.jpa.domain;
+
+import javax.persistence.DiscriminatorColumn;
+import javax.persistence.Entity;
+import javax.persistence.Inheritance;
+
+@Entity
+//@Inheritance(strategy=)
+@DiscriminatorColumn("SA")
+public class SavingsAccount extends Account{
+	
+	public SavingsAccount() {
+		
+	}
+	
+
+}

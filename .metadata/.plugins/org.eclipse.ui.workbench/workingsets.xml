@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1562565665338_0" label="Java Main Sources" name="Java Main Sources">
+<item elementID="=myproject/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1562565665349_1" label="Java Test Sources" name="Java Test Sources"/>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1563960086828_9" label="bootproject" name="bootproject">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/com.visa.training.bootproject-0.0.1-SNAPSHOT" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1562565672484_2" label="Window Working Set" name="Aggregate for window 1562565672483"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1562643206286_3" label="Window Working Set" name="Aggregate for window 1562643206286"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1563274295772_4" label="Window Working Set" name="Aggregate for window 1563274295772"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1563351986308_5" label="Window Working Set" name="Aggregate for window 1563351986308"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1563421223859_6" label="Window Working Set" name="Aggregate for window 1563421223859"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1563507522009_7" label="Window Working Set" name="Aggregate for window 1563507522009"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1563775147027_8" label="Window Working Set" name="Aggregate for window 1563775147027"/>
+</workingSetManager>

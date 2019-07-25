@@ -1,0 +1,80 @@
+package myproject;
+
+ class ChemicalElement {
+	
+	private int atomic_no;
+	private String elementname;
+	private char symbol;
+	
+ ChemicalElement(int atom,String name,char sym) {
+		this.atomic_no=atom;
+		this.elementname=name;
+		this.symbol=sym;
+	}
+	
+	
+	public boolean equals(Object o) {
+		ChemicalElement p= (ChemicalElement)o;	
+		if(p.atomic_no == atomic_no && p.elementname == elementname && p.symbol==symbol)
+			return true;
+		else return false;
+	}
+	
+	public  boolean isAlkalimetal(Object o) {
+		int alkali[]= {3, 11, 19, 37, 55,87};
+		int c = 0;
+		ChemicalElement p = (ChemicalElement)o;
+	for(int a= 0;a<6;a++) {
+		if(p.atomic_no == alkali[a])
+		{
+			 c=1;
+			break;
+		}
+		}
+	if(c==1)
+	return true;
+	else return false;
+	}
+	
+	public  boolean isTransitionmetal(Object o) {
+		int transition[]= {21,22,23,24,25,26,27,28,29,30,31,39,40,41,42,43,44,45,46,47,48,72,73,74,75,76,77,78,79,80,104,105,106,107,108,109,110,111,112};
+		int c = 0;
+		ChemicalElement p = (ChemicalElement)o;
+	for(int a= 0;a<6;a++) {
+		if(p.atomic_no == transition[a])
+		{
+			 c=1;
+			break;
+		}
+		}
+	if(c==1)
+	return true;
+	else return false;
+	}
+	
+	public  boolean ismetal(Object o) {
+		int metal[]= {13, 49, 50, 81, 82, 83, 113, 114, 115,116};
+		int c = 0;
+		ChemicalElement p = (ChemicalElement)o;
+	for(int a= 0;a<6;a++) {
+		if(p.atomic_no == metal[a])
+		{
+			 c=1;
+			break;
+		}
+		}
+	if(c==1)
+	return true;
+	else return false;
+	}
+	public class ChemicalElementApp{
+		public static void main(String[] args) {
+			ChemicalElement c1= new ChemicalElement(1,"hydrogen",'H');
+			ChemicalElement c2= new ChemicalElement(8,"oxygen",'O');
+			c1.equals(c2);
+			isAlkalimetal(c1);
+			
+		}
+	}
+
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home page</title>
+</head>
+<body bgcolor="pink">
+<h2> Welcome to My Web app</h2>
+
+<a href = helloworld>HelloWorld</a><br>
+<a href = Calci.html>Simple Calculator</a><br>
+<a href = product.html>Display products</a><br>
+<a href = car.html>Car</a><br>
+<a href = bikes.html>bike</a><br>
+<a href = books.html>book</a><br>
+<a href = Product.jsp>book</a><br>
+
+
+
+
+</body>
+</html>

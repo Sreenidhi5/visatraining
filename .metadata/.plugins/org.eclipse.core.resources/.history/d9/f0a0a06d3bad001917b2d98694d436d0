@@ -1,0 +1,7 @@
+package com.visa.training.bootproject.dal;
+
+public interface ProductRepository {
+	
+	
+
+}

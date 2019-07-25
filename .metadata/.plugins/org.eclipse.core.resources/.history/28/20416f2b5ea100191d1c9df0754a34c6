@@ -1,0 +1,20 @@
+package myproject;
+
+public class DOWFinder {
+	public static void main(String[] args) {
+		int a= finddow();
+	}
+    int finddow(int d,int m,int y) {
+    	int days[]= {31,28,31,30,31,30,31,31,30,31,30,31};
+    	int nod= y-1900 *365;
+		int nol = (y-1900)/4;
+		nod=nod+nol;
+		if(m==1||m==2 && y%4==0)
+		{
+			nod=nod-1;
+		}
+		nod= nod+ dat
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.visa.training.jpa.domain;
+
+public class SavingsAccount extends Account{
+	
+	public SavingsAccount() {
+		
+	}
+
+}

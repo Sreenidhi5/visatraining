@@ -1,0 +1,43 @@
+package com.visa.training.jpa.dal;
+
+import java.sql.SQLException;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+
+import com.visa.training.jpa.domain.Product;
+
+
+public class JpaProductDAO {
+	
+	public  Product save(Product p) throws SQLException {
+		EntityManagerFactory emf= JpaUtil.getEmf();
+		EntityManager em= emf.createEntityManager();
+		try {
+			EntityTransaction ts=em.getTransaction();
+			ts.begin();
+			em.persist(p);
+			ts.commit();
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			em.close();
+		}
+		
+		return p;
+		
+	}
+	public Product findById(int id) {
+        EntityManager em = JpaUtil.getEmf().createEntityManager();
+        try {
+            Product p = em.find(Product.class, id);
+            return p;
+        } finally {
+            em.close();
+        }
+    }
+
+}
