@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/root/Desktop/bootproject-master"/>
+			<item value="/root/Desktop/SpringExample/src/main/java/com/visa/training/SpringExample/SpringExampleApplication.java"/>
 			<item value="/root/eclipse-workspace/Servers"/>
 			<item value="/root/eclipse-workspace/"/>
 			<item value="/root/eclipse-workspace"/>
@@ -62,6 +64,24 @@
 		</list>
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="/root/Desktop/bootproject-master"/>
+			<item value="/root/Desktop/secureprojects"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
 		</list>
 	</section>
 </section>

@@ -1,0 +1,25 @@
+package com.visa.training.bootproject.service;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.visa.training.bootproject.domain.Product;
+
+public class ProductServiceImplTest{
+
+	@Test
+	public void addNewProduct_Returns_Valid_ID_When_Value_Gt_MinValue() {
+	//	fail("Not yet implemented");
+		
+		//Arrange
+		ProductServiceImpl impl = new ProductServiceImpl();
+		Product toBeAdded = new Product("laptops",1000,2);
+		
+	    //Act
+		int id =impl.addNewProduct(toBeAdded);	
+		//Assert
+		assertTrue(id>0);
+	}
+
+}

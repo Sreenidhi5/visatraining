@@ -1,0 +1,7 @@
+package com.visa.training.SpringExample;
+
+import com.visa.training.SpringExample.domain.Book;
+
+public class BookUtil {
+Book b = new Book()
+}

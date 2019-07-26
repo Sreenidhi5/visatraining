@@ -1,0 +1,15 @@
+package com.visa.training.SpringExample.service;
+
+import java.util.List;
+
+
+public interface BookService {
+	public int addNewBook(Book p);
+	public Book findById(int id);
+	public List<Book> findAll();
+	public void deleteBook(int id);
+	public void update(Book p);
+	public void remove(int id);
+	
+
+}

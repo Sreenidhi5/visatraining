@@ -1,0 +1,39 @@
+package com.visa.training.SpringExample.dal;
+
+import java.util.List;
+
+import com.visa.training.SpringExample.domain.Book;
+
+public class BookDAOImpl implements BookDAO{
+
+	@Override
+	public Book save(Book b) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Book update(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void remove(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Book findById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Book> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

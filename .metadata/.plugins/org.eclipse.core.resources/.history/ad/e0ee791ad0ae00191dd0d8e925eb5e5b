@@ -1,0 +1,71 @@
+package com.visa.training.SpringExample.domain;
+
+import javax.persistence.CascadeType;
+
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+@Entity
+public class Chapter {
+
+	@Id
+	@GeneratedValue( strategy = GenerationType.IDENTITY)
+	int chid;
+	int index;
+	String chname;
+	int numofpages;
+	
+	@ManyToOne(fetch = FetchType.EAGER,cascade = CascadeType.PERSIST)
+	@JoinColumn(name="book_id")
+	Book book;
+	
+	
+	
+	public Book getBook() {
+		return book;
+	}
+	public void setBook(Book book) {
+		this.book = book;
+	}
+	public int getIndex() {
+		return index;
+	}
+	public void setIndex(int index) {
+		this.index = index;
+	}
+	public String getChname() {
+		return chname;
+	}
+	public void setChname(String chname) {
+		this.chname = chname;
+	}
+	public int getNumofpages() {
+		return numofpages;
+	}
+	public void setNumofpages(int numofpages) {
+		this.numofpages = numofpages;
+	}
+	public Chapter(int index, String chname, int numofpages) {
+		super();
+		this.index = index;
+		this.chname = chname;
+		this.numofpages = numofpages;
+	}
+	@Override
+	public String toString() {
+		return "Chapter [chid=" + chid + ", index=" + index + ", chname=" + chname + ", numofpages=" + numofpages
+				 + "]";
+	}
+	public Chapter() {
+		super();
+	}
+	
+	
+	
+	
+}

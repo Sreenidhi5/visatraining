@@ -1,5 +1,0 @@
-package com.visa.training.sl;
-
-public interface ProductService {
-
-}
